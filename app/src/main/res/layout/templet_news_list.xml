@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="@dimen/dp_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/newsTitle"
+        android:text="You screwed me: Lewis Hamilton to Mercedes on finishing 4th"/>
+
+    <ImageView
+        android:layout_marginVertical="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsTitle"
+        app:layout_constraintBottom_toTopOf="@+id/newsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/thumbnail_image"
+        android:id="@+id/newsImage"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/newsImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsDescription"
+        android:text="Liverpool midfielders Naby Keita and Alex Oxlade-Chamberlain have been left out of the club's 2022-23 UEFA Champions League group stage squad. Both players are suffering from a muscle injury and are ineligible to be added again until January. Liverpool will travel to Napoli for their Champions League Group A opening match on September 7."/>
+
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readMore"
+        android:text="Read More..."
+        android:textColor="@color/red"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
